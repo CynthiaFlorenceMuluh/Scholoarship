@@ -1,0 +1,100 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+h1 {
+    background: green;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    padding: 20px;
+}
+
+nav a,
+.button {
+    background: green;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px;
+    display: inline-block;
+}
+
+section {
+    background: white;
+    width: 85%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: green;
+    color: white;
+}
+
+form {
+    width: 400px;
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.card {
+    display: inline-block;
+    width: 200px;
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ddd;
+}
+
+.card a {
+    background: green;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    display: inline-block;
+}
