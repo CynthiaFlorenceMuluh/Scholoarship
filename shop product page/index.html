@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Shop</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Search products...">
+      <button>Search</button>
+    </div>
+  </header>
+
+  <!-- Filters & Sorting -->
+  <section class="filters">
+    <label for="category">Category:</label>
+    <select id="category">
+      <option>All</option>
+      <option>Electronics</option>
+      <option>Fashion</option>
+      <option>Computers</option>
+      <option>Home Appliances</option>
+    </select>
+
+    <label for="sort">Sort by:</label>
+    <select id="sort">
+      <option value="price-low">Price: Low to High</option>
+      <option value="price-high">Price: High to Low</option>
+      <option value="rating">Rating</option>
+      <option value="newest">Newest</option>
+    </select>
+  </section>
+
+  <!-- Product Grid -->
+  <main class="product-grid">
+    <div class="product-card">
+      <img src="images/product1.jpg" alt="Laptop">
+      <h3>Laptop Pro</h3>
+      <p class="price"><span class="original-price">$1000</span> <span class="discount">-20%</span> <span class="current-price">$800</span></p>
+      <p class="rating">⭐⭐⭐⭐☆ (4.5)</p>
+      <button>Add to Cart</button>
+      <button class="wishlist">♡ Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/product2.jpg" alt="Shoes">
+      <h3>Running Shoes</h3>
+      <p class="price"><span class="current-price">$60</span></p>
+      <p class="rating">⭐⭐⭐☆☆ (3.0)</p>
+      <button>Add to Cart</button>
+      <button class="wishlist">♡ Wishlist</button>
+    </div>
+  </main>
+
+  <!-- Pagination -->
+  <section class="pagination">
+    <button>Previous</button>
+    <button>1</button>
+    <button>2</button>
+    <button>Next</button>
+    <button class="load-more">Load More</button>
+  </section>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Product Details</h1>
+  </header>
+
+  <main class="product-detail">
+    <!-- Product Gallery -->
+    <div class="gallery">
+      <img src="images/product-main.jpg" alt="Main Product Image" class="main-img">
+      <div class="thumbnails">
+        <img src="images/product1.jpg" alt="Thumbnail 1">
+        <img src="images/product2.jpg" alt="Thumbnail 2">
+        <img src="images/product3.jpg" alt="Thumbnail 3">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="info">
+      <h2>Smartphone X</h2>
+      <p class="price"><span class="original-price">$600.00</span> <span class="discount">-20%</span> <span class="current-price">$480.00</span></p>
+      <p class="stock">In Stock</p>
+
+      <p class="description">
+        The Smartphone X offers cutting-edge performance, sleek design, and advanced camera features.
+      </p>
+
+      <!-- Specifications -->
+      <ul class="specs">
+        <li>Display: 6.5" OLED</li>
+        <li>Storage: 128GB</li>
+        <li>Camera: 48MP Dual Lens</li>
+        <li>Battery: 4000mAh</li>
+      </ul>
+
+      <!-- Variations -->
+      <label for="variation">Choose Color:</label>
+      <select id="variation">
+        <option>Black</option>
+        <option>Silver</option>
+        <option>Blue</option>
+      </select>
+
+      <!-- Quantity Selector -->
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" value="1" min="1">
+
+      <!-- Action Buttons -->
+      <div class="actions">
+        <button>Add to Cart</button>
+        <button class="buy">Buy Now</button>
+        <button class="wishlist">♡ Add to Wishlist</button>
+      </div>
+
+      <!-- Ratings & Reviews -->
+      <div class="reviews">
+        <h3>Customer Reviews</h3>
+        <p>⭐⭐⭐⭐☆ (4/5 based on 120 reviews)</p>
+        <p>"Great phone with excellent battery life!"</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Related Products -->
+  <section class="related">
+    <h2>Related Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/product-related1.jpg" alt="Related Product 1">
+        <h3>Smartphone Y</h3>
+        <p>$450.00</p>
+      </div>
+      <div class="product-card">
+        <img src="images/product-related2.jpg" alt="Related Product 2">
+        <h3>Smartphone Z</h3>
+        <p>$520.00</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

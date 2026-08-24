@@ -1,0 +1,116 @@
+.product-detail {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+.gallery {
+  flex: 1;
+}
+
+.main-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbnails img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.info {
+  flex: 1;
+}
+
+.price {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.discount {
+  color: red;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.current-price {
+  color: #0078d7;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.stock {
+  color: green;
+  font-weight: bold;
+}
+
+.specs {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.buy {
+  background-color: #28a745;
+  color: white;
+}
+
+button.wishlist {
+  background-color: #f0f4f8;
+  color: #0078d7;
+}
+
+.reviews {
+  margin-top: 20px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.related {
+  padding: 20px;
+}
+
+.related h2 {
+  margin-bottom: 15px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
