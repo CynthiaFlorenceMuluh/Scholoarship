@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Delivery Management | ShopEase Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brandmark">E-</span> Commerce <small>Admin</small></div>
+    <div class="top-actions"><span></span><span class="user">Admin User</span><button>⌄</button></div>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+      <nav>
+        <a href="delivery-dashboard.html"><span>Delivery Dashboard</span></a>
+        <a class="active" href="delivery-management.html"> <span>Delivery Management</span></a>
+        <a href="reviews.html"> <span>Reviews &amp; Ratings</span></a>
+        <a href="reports.html"> <span>Reports &amp; Analytics</span></a>
+        <a href="#"><span>Settings</span></a>
+        <a href="#"> <span>Logout</span></a>
+      </nav>
+    </aside>
+    <main class="content">
+      <div class="page-head">
+        <div>
+          <p class="eyebrow">DELIVERY</p>
+          <h1>Delivery Management</h1>
+          <p>Assign drivers and update delivery statuses.</p>
+        </div>
+        <button class="btn primary" onclick="alert('Delivery form can be connected to your database.')">+ Assign Delivery</button>
+      </div>
+
+      <div class="toolbar">
+        <input id="deliverySearch" placeholder="Search order or customer..." onkeyup="filterTable('deliverySearch','deliveryTable')">
+        <select>
+          <option>All Status</option>
+          <option>Pending</option>
+          <option>Processing</option>
+          <option>Shipped</option>
+          <option>Out for Delivery</option>
+          <option>Delivered</option>
+          <option>Cancelled</option>
+        </select>
+      </div>
+
+      <section class="panel">
+        <div class="table-wrap">
+          <table id="deliveryTable">
+            <thead>
+              <tr>
+                <th>Order</th>
+                <th>Customer</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Delivery Person</th>
+                <th>Status</th>
+                <th>Delivery Date</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><b>#ORD10254</b></td><td>Jane Doe</td><td>Molyko, Buea</td><td>677 000 111</td><td>Paul N.</td><td><span class="status out-for-delivery">Out for Delivery</span></td><td>Aug 24, 2026</td><td><button class="action" onclick="updateDelivery('#ORD10254')">✎</button><button class="action">⋮</button></td></tr>
+              <tr><td><b>#ORD10253</b></td><td>John Smith</td><td>Buea Town</td><td>679 222 333</td><td>Mary K.</td><td><span class="status shipped">Shipped</span></td><td>Aug 23, 2026</td><td><button class="action" onclick="updateDelivery('#ORD10253')">✎</button><button class="action">⋮</button></td></tr>
+              <tr><td><b>#ORD10252</b></td><td>Anna Bello</td><td>Mile 16, Buea</td><td>650 444 555</td><td>Chris T.</td><td><span class="status delivered">Delivered</span></td><td>Aug 22, 2026</td><td><button class="action" onclick="updateDelivery('#ORD10252')">✎</button><button class="action">⋮</button></td></tr>
+              <tr><td><b>#ORD10251</b></td><td>David N.</td><td>Great Soppo, Buea</td><td>655 777 888</td><td>—</td><td><span class="status processing">Processing</span></td><td>Aug 24, 2026</td><td><button class="action" onclick="updateDelivery('#ORD10251')">✎</button><button class="action">⋮</button></td></tr>
+              <tr><td><b>#ORD10250</b></td><td>Sarah M.</td><td>Molyko, Buea</td><td>690 999 000</td><td>Peter L.</td><td><span class="status pending">Pending</span></td><td>Aug 24, 2026</td><td><button class="action" onclick="updateDelivery('#ORD10250')">✎</button><button class="action">⋮</button></td></tr>
+              <tr><td><b>#ORD10249</b></td><td>Michael F.</td><td>Bonduma, Buea</td><td>675 111 222</td><td>—</td><td><span class="status cancelled">Cancelled</span></td><td>Aug 21, 2026</td><td><button class="action" onclick="updateDelivery('#ORD10249')">✎</button><button class="action">⋮</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

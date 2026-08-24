@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reports &amp; Analytics | ShopEase Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brandmark">E-</span> Commerce <small>Admin</small></div>
+    <div class="top-actions"><span></span><span class="user">Admin User</span><button>⌄</button></div>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+      <nav>
+        <a href="delivery-dashboard.html"> <span>Delivery Dashboard</span></a>
+        <a href="delivery-management.html"><span>Delivery Management</span></a>
+        <a href="reviews.html"> <span>Reviews &amp; Ratings</span></a>
+        <a class="active" href="reports.html"> <span>Reports &amp; Analytics</span></a>
+        <a href="#"> <span>Settings</span></a>
+        <a href="#"><span>Logout</span></a>
+      </nav>
+    </aside>
+    <main class="content">
+      <div class="page-head">
+        <div>
+          <p class="eyebrow">BUSINESS INTELLIGENCE</p>
+          <h1>Reports &amp; Analytics</h1>
+          <p>Understand sales, products, customers and operations.</p>
+        </div>
+        <div>
+          <select class="date-filter">
+            <option>Aug 1 – Aug 24, 2026</option>
+            <option>Last 30 days</option>
+            <option>Last 6 months</option>
+          </select>
+          <button class="btn primary" onclick="window.print()">↥ Export / Print</button>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><span>Total Sales</span><strong>4,740,000 FCFA</strong><small>↑ 14.8%</small></div>
+        <div class="stat"><span>Total Orders</span><strong>529</strong><small>↑ 9.4%</small></div>
+        <div class="stat"><span>Active Customers</span><strong>1,250</strong><small>↑ 7.2%</small></div>
+        <div class="stat"><span>Delivery Rate</span><strong>96%</strong><small>↑ 3.1%</small></div>
+      </div>
+
+      <section class="panel chart-panel">
+        <div class="panel-head"><h2>Sales Overview</h2><span class="legend">● Sales</span></div>
+        <div class="chart">
+          <div class="ylabels"><span>800k</span><span>600k</span><span>400k</span><span>200k</span><span>0</span></div>
+          <div class="bars">
+            <div class="bar-col"><div class="bar" style="height: 61px" title="320,000 FCFA"></div><span>Jan</span></div>
+            <div class="bar-col"><div class="bar" style="height: 78px" title="410,000 FCFA"></div><span>Feb</span></div>
+            <div class="bar-col"><div class="bar" style="height: 72px" title="380,000 FCFA"></div><span>Mar</span></div>
+            <div class="bar-col"><div class="bar" style="height: 99px" title="520,000 FCFA"></div><span>Apr</span></div>
+            <div class="bar-col"><div class="bar" style="height: 116px" title="610,000 FCFA"></div><span>May</span></div>
+            <div class="bar-col"><div class="bar" style="height: 110px" title="580,000 FCFA"></div><span>Jun</span></div>
+            <div class="bar-col"><div class="bar" style="height: 136px" title="720,000 FCFA"></div><span>Jul</span></div>
+            <div class="bar-col"><div class="bar" style="height: 154px" title="810,000 FCFA"></div><span>Aug</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-two">
+        <div class="panel">
+          <div class="panel-head"><h2>Best-Selling Products</h2></div>
+          <ol class="rank-list">
+            <li><span>Wireless Headphones</span><b>324 sold</b></li>
+            <li><span>Premium Smartphone</span><b>281 sold</b></li>
+            <li><span>Smart Watch Pro</span><b>236 sold</b></li>
+            <li><span>Classic Sneakers</span><b>198 sold</b></li>
+            <li><span>Modern Laptop</span><b>174 sold</b></li>
+          </ol>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h2>Payment Statistics</h2></div>
+          <div class="donut"><div class="donut-hole">100%</div></div>
+          <div class="legend-list">
+            <span>Mobile Money <b>48%</b></span>
+            <span>Card <b>28%</b></span>
+            <span>Bank Transfer <b>16%</b></span>
+            <span>Cash on Delivery <b>8%</b></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-three">
+        <div class="panel"><h3>Inventory</h3><strong class="big-number">1,250</strong><p>Products in stock</p><span class="status pending">32 Low Stock</span></div>
+        <div class="panel"><h3>Delivery</h3><strong class="big-number">96%</strong><p>On-time delivery rate</p><span class="status delivered">+3.1% improvement</span></div>
+        <div class="panel"><h3>Customers</h3><strong class="big-number">1,250</strong><p>Active customers</p><span class="status approved">+7.2% this month</span></div>
+      </section>
+    </main>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

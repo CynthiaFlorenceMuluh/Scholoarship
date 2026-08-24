@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Delivery Dashboard | ShopEase Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brandmark">E-</span> Commerce <small>Admin</small></div>
+    <div class="top-actions"><span></span><span class="user">Admin User</span><button></button></div>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+      <nav>
+        <a class="active" href="delivery-dashboard.html"><span>Delivery Dashboard</span></a>
+        <a href="delivery-management.html"> <span>Delivery Management</span></a>
+        <a href="reviews.html"> <span>Reviews &amp; Ratings</span></a>
+        <a href="reports.html"> <span>Reports &amp; Analytics</span></a>
+        <a href="#"> <span>Settings</span></a>
+        <a href="#"> <span>Logout</span></a>
+      </nav>
+    </aside>
+    <main class="content">
+      <div class="page-head">
+        <div>
+          <p class="eyebrow">OPERATIONS</p>
+          <h1>Delivery Dashboard</h1>
+          <p>Track and monitor all customer deliveries.</p>
+        </div>
+        <button class="btn primary">+ New Delivery</button>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><span>Total Deliveries</span><strong>156</strong><small>↑ 12% this month</small></div>
+        <div class="stat"><span>Pending</span><strong>18</strong><small>Needs attention</small></div>
+        <div class="stat"><span>Processing</span><strong>25</strong><small>Being prepared</small></div>
+        <div class="stat"><span>Shipped</span><strong>35</strong><small>On the way</small></div>
+        <div class="stat"><span>Out for Delivery</span><strong>45</strong><small>Today</small></div>
+        <div class="stat"><span>Delivered</span><strong>120</strong><small>↑ 8% this month</small></div>
+        <div class="stat"><span>Cancelled</span><strong>6</strong><small>↓ 2% this month</small></div>
+      </div>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Recent Deliveries</h2>
+          <a href="delivery-management.html">View all </a>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Order</th>
+                <th>Customer</th>
+                <th>Address</th>
+                <th>Delivery Person</th>
+                <th>Status</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><b>#ORD10254</b></td><td>Jane Doe</td><td>Molyko, Buea</td><td>Paul N.</td><td><span class="status out-for-delivery">Out for Delivery</span></td><td>Aug 24, 2026</td></tr>
+              <tr><td><b>#ORD10253</b></td><td>John Smith</td><td>Buea Town</td><td>Mary K.</td><td><span class="status shipped">Shipped</span></td><td>Aug 23, 2026</td></tr>
+              <tr><td><b>#ORD10252</b></td><td>Anna Bello</td><td>Mile 16, Buea</td><td>Chris T.</td><td><span class="status delivered">Delivered</span></td><td>Aug 22, 2026</td></tr>
+              <tr><td><b>#ORD10251</b></td><td>David N.</td><td>Great Soppo, Buea</td><td>—</td><td><span class="status processing">Processing</span></td><td>Aug 24, 2026</td></tr>
+              <tr><td><b>#ORD10250</b></td><td>Sarah M.</td><td>Molyko, Buea</td><td>Peter L.</td><td><span class="status pending">Pending</span></td><td>Aug 24, 2026</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="grid-two">
+        <div class="panel">
+          <div class="panel-head"><h2>Delivery Progress</h2></div>
+          <div class="progress-list">
+            <div><span>Pending</span><b>18</b><i><em style="width:25%"></em></i></div>
+            <div><span>Processing</span><b>25</b><i><em style="width:38%"></em></i></div>
+            <div><span>Shipped</span><b>35</b><i><em style="width:54%"></em></i></div>
+            <div><span>Out for Delivery</span><b>45</b><i><em style="width:72%"></em></i></div>
+            <div><span>Delivered</span><b>120</b><i><em style="width:92%"></em></i></div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h2>Quick Actions</h2></div>
+          <div class="quick">
+            <a href="delivery-management.html">Assign Delivery</a>
+            <a href="delivery-management.html"> Update Status</a>
+            <a href="reports.html"> View Analytics</a>
+            <a href="reviews.html"> Review Feedback</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

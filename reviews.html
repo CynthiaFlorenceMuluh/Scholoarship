@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reviews &amp; Ratings | ShopEase Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brandmark">E-</span> Commerce <small>Admin</small></div>
+    <div class="top-actions"><span></span><span class="user">Admin User</span><button>⌄</button></div>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+      <nav>
+        <a href="delivery-dashboard.html"> <span>Delivery Dashboard</span></a>
+        <a href="delivery-management.html"> <span>Delivery Management</span></a>
+        <a class="active" href="reviews.html"> <span>Reviews &amp; Ratings</span></a>
+        <a href="reports.html"><span>Reports &amp; Analytics</span></a>
+        <a href="#"> <span>Settings</span></a>
+        <a href="#"><span>Logout</span></a>
+      </nav>
+    </aside>
+    <main class="content">
+      <div class="page-head">
+        <div>
+          <p class="eyebrow">CUSTOMER FEEDBACK</p>
+          <h1>Reviews &amp; Ratings</h1>
+          <p>Manage customer reviews and product ratings.</p>
+        </div>
+        <div class="rating-summary"><strong>4.7</strong><span>★★★★★</span><small>Average rating</small></div>
+      </div>
+
+      <div class="stats mini">
+        <div class="stat"><span>Total Reviews</span><strong>428</strong></div>
+        <div class="stat"><span>Pending</span><strong>18</strong></div>
+        <div class="stat"><span>Approved</span><strong>398</strong></div>
+        <div class="stat"><span>Flagged</span><strong>12</strong></div>
+      </div>
+
+      <section class="panel">
+        <div class="toolbar">
+          <input id="reviewSearch" placeholder="Search product or customer..." onkeyup="filterTable('reviewSearch','reviewTable')">
+          <select>
+            <option>All Reviews</option>
+            <option>Pending</option>
+            <option>Approved</option>
+            <option>Rejected</option>
+          </select>
+        </div>
+
+        <div class="table-wrap">
+          <table id="reviewTable">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Customer</th>
+                <th>Rating</th>
+                <th>Review / Comment</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><b>Wireless Headphones</b></td><td>Jane Doe</td><td><span class="stars">★★★★★</span></td><td class="comment">Excellent sound quality and battery life.</td><td>Aug 24, 2026</td><td><span class="status approved">Approved</span></td><td><button class="action" onclick="reviewAction('Approved')">✓</button><button class="action" onclick="alert('Review deleted in demo mode.')">🗑</button></td></tr>
+              <tr><td><b>Smart Watch Pro</b></td><td>John Smith</td><td><span class="stars">★★★★☆</span></td><td class="comment">Looks great and works as expected.</td><td>Aug 23, 2026</td><td><span class="status pending">Pending</span></td><td><button class="action" onclick="reviewAction('Pending')">✓</button><button class="action" onclick="alert('Review deleted in demo mode.')">🗑</button></td></tr>
+              <tr><td><b>Modern Laptop</b></td><td>Anna Bello</td><td><span class="stars">★★★★★</span></td><td class="comment">Very fast for school and office work.</td><td>Aug 22, 2026</td><td><span class="status approved">Approved</span></td><td><button class="action" onclick="reviewAction('Approved')">✓</button><button class="action" onclick="alert('Review deleted in demo mode.')">🗑</button></td></tr>
+              <tr><td><b>Classic Sneakers</b></td><td>David N.</td><td><span class="stars">★★★☆☆</span></td><td class="comment">Comfortable but delivery took longer than expected.</td><td>Aug 21, 2026</td><td><span class="status pending">Pending</span></td><td><button class="action" onclick="reviewAction('Pending')">✓</button><button class="action" onclick="alert('Review deleted in demo mode.')">🗑</button></td></tr>
+              <tr><td><b>Premium Smartphone</b></td><td>Sarah M.</td><td><span class="stars">★★★★★</span></td><td class="comment">Great camera and smooth performance.</td><td>Aug 20, 2026</td><td><span class="status approved">Approved</span></td><td><button class="action" onclick="reviewAction('Approved')">✓</button><button class="action" onclick="alert('Review deleted in demo mode.')">🗑</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel review-guide">
+        <h2>Customer Review Flow</h2>
+        <p>Customers can write a review after an order is marked <b>Delivered</b>. Submitted reviews appear here for moderation before publication.</p>
+      </section>
+    </main>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

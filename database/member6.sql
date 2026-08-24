@@ -1,0 +1,37 @@
+USE ecommerce_db;
+
+CREATE TABLE IF NOT EXISTS deliveries (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ order_id INT NULL,
+ delivery_person VARCHAR(120),
+ status VARCHAR(50) DEFAULT 'Pending',
+ delivery_address VARCHAR(255),
+ phone VARCHAR(30),
+ delivery_date DATE NULL,
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS reviews (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ product_id INT NULL,
+ customer_id INT NULL,
+ rating TINYINT NOT NULL,
+ comment TEXT,
+ status VARCHAR(30) DEFAULT 'Pending',
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS delivery_status_history (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ delivery_id INT NOT NULL,
+ status VARCHAR(50) NOT NULL,
+ changed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+ FOREIGN KEY(delivery_id) REFERENCES deliveries(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS report_exports (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ report_type VARCHAR(100),
+ generated_by INT NULL,
+ generated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
